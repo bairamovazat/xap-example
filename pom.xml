@@ -23,9 +23,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.gigaspaces</groupId>
-            <artifactId>xap-openspaces</artifactId>
-            <version>15.2.0-SNAPSHOT</version>
+            <groupId>com.gigaspaces</groupId>
+            <artifactId>gs-runtime</artifactId>
+            <version>10.2.0-13818-RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gigaspaces</groupId>
+            <artifactId>gs-openspaces</artifactId>
+            <version>10.2.0-13818-RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
