@@ -16,9 +16,9 @@ public class ReaderFromGigaSpace {
             try {
                 GigaSpace space = getGigaSpace("/./simple-space?schema=default&groups=xap-15.2.0&state=started");
 
-                for (int i = 0; i < 1000; i++) {
-                    ReadByIdsResult<Event> results = space.readByIds(Event.class, new Long[]{1L, 2L, (long) i});
-                    System.out.println("read - " + Arrays.toString(results.getResultsArray()));
+                for (int i = 0; i < 100; i++) {
+                    int count = space.count(new Event());
+                    System.out.println(count);
                     Thread.sleep(1000);
                 }
             } catch (InterruptedException e) {
